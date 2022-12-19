@@ -3,7 +3,7 @@
 
 int main (int argc, char* argv[])
 {
-        cv::Mat h_img1 = cv::imread("images/autumn.tif");
+        cv::Mat h_img1 = cv::imread("input_image.tif");
         //Define device variables
         cv::cuda::GpuMat d_result1,d_result2,d_result3,d_result4,d_img1;
         //Upload Image to device
