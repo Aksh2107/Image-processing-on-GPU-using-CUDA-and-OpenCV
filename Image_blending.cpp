@@ -4,8 +4,8 @@
 int main (int argc, char* argv[])
 {
     //Read Two Images 
-    cv::Mat h_img1 = cv::imread("images/cameraman.tif");
-    cv::Mat h_img2 = cv::imread("images/circles.png");
+    cv::Mat h_img1 = cv::imread("input_image.tif");
+    cv::Mat h_img2 = cv::imread("input_image2.png");
     //Create Memory for storing Images on device
     cv::cuda::GpuMat d_result1,d_img1, d_img2;
     cv::Mat h_result1;
