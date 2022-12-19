@@ -5,7 +5,7 @@
 
 int main ()
 {
-    cv::Mat h_img1 = cv::imread("images/cameraman.tif",0);
+    cv::Mat h_img1 = cv::imread("input_image.tif",0);
 	cv::Scalar intensity = h_img1.at<uchar>(cv::Point(100, 50));
 	std::cout<<"Pixel Intensity of gray scale Image at (100,50) is:"<<intensity.val[0]<<std::endl;
     cv::Mat h_img2 = cv::imread("images/autumn.tif",1);
@@ -13,22 +13,3 @@ int main ()
 	std::cout<<"Pixel Intensity of color Image at (100,50) is:"<<intensity1<<std::endl;
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
