@@ -3,7 +3,7 @@
 
 int main (int argc, char* argv[])
 {
-    cv::Mat h_img1 = cv::imread("images/circles.png");
+    cv::Mat h_img1 = cv::imread("input_image.png");
     //Create Device variables
     cv::cuda::GpuMat d_result1,d_img1;
     cv::Mat h_result1;     
