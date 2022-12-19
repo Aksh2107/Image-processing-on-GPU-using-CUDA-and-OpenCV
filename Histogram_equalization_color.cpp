@@ -4,7 +4,7 @@
 
 int main ()
 {
-    cv::Mat h_img1 = cv::imread("images/autumn.tif");
+    cv::Mat h_img1 = cv::imread("input_image.tif");
     cv::Mat h_img2,h_result1;
     cvtColor(h_img1, h_img2, cv::COLOR_BGR2HSV);
     //Split the image into 3 channels; H, S and V channels respectively and store it in a std::vector
