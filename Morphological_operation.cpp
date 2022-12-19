@@ -4,7 +4,7 @@
 
 int main ()
 {
-    cv::Mat h_img1 = cv::imread("images/blobs.png",0);
+    cv::Mat h_img1 = cv::imread("input_image.png",0);
     cv::cuda::GpuMat d_img1,d_resulte,d_resultd,d_resulto, d_resultc;
 	cv::Mat element = cv::getStructuringElement(cv::MORPH_RECT,cv::Size(5,5));	
 	d_img1.upload(h_img1);
@@ -35,22 +35,3 @@ int main ()
 	cv::waitKey();
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
