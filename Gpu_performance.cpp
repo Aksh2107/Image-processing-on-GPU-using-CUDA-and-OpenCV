@@ -3,7 +3,7 @@
 
 int main (int argc, char* argv[])
 {
- cv::Mat h_img1 = cv::imread("images/cameraman.tif", 0);
+ cv::Mat h_img1 = cv::imread("input_image.tif", 0);
 cv::cuda::GpuMat d_result1,d_result2,d_result3,d_result4,d_result5, d_img1;
 //Measure initial time ticks
 int64 work_begin = cv::getTickCount(); 
