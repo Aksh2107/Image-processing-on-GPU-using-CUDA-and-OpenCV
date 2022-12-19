@@ -4,7 +4,7 @@
 
 int main (int argc, char* argv[])
 {
-cv::Mat src = cv::imread("images/cameraman.tif", 0);
+cv::Mat src = cv::imread("input_image.tif", 0);
 cv::Mat result_host1,result_host2,result_host3,result_host4,result_host5;
 //Get initial time in miliseconds
 int64 work_begin = cv::getTickCount(); 
