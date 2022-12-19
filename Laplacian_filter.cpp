@@ -4,7 +4,7 @@
 
 int main ()
 {
-    cv::Mat h_img1 = cv::imread("images/blobs.png",0);
+    cv::Mat h_img1 = cv::imread("input_image2.png",0);
     cv::cuda::GpuMat d_img1,d_result1,d_result3;
 	d_img1.upload(h_img1);
 	cv::Ptr<cv::cuda::Filter> filter1,filter3;
@@ -23,22 +23,3 @@ int main ()
 	cv::waitKey();
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
